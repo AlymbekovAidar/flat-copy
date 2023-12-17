@@ -1,0 +1,62 @@
+/* Общие стили */
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  color: white;
+  background-color: #333;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  color: white;
+}
+
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+}
+
+button {
+  padding: 10px;
+  margin: 5px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Контейнер для деталей объявления */
+.details-container {
+  display: flex;
+}
+
+/* Блоки с деталями объявления */
+.details-block {
+  margin-right: 20px;
+}
+
+/* Дополнительные стили для деталей объявления */
+.details-block h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.details-block div {
+  margin-bottom: 5px;
+}
+
+/* Сообщение об ошибке */
+.error-message {
+  color: red;
+}
