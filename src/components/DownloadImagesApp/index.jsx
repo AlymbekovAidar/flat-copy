@@ -97,6 +97,7 @@ const DownloadImagesApp = () => {
     const seriesParam = params.find(param => param.name === "Серия");
     const furnitureParam = params.find(param => param.name === "Мебель");
     const rayon = params.find(param => param.name === "Район");
+    const podselenie = params.find(param => param.name === "Подселение");
     const priceSymbol = data.symbol || "$";
 
     const formattedText = `
@@ -116,6 +117,10 @@ const DownloadImagesApp = () => {
     if (seriesParam) {
         adDetailsDraft.push(`Серия - ${seriesParam.value}`)
         adDetailsDraft2.push(`Серия - ${seriesParam.value}`)
+    }
+    if(podselenie && podselenie.value.includes("С подселением")) {
+      adDetailsDraft.push(podselenie.value)
+      adDetailsDraft2.push(podselenie.value)
     }
     if (roomParam) {
         adDetailsDraft.push(`Комнат - ${roomParam.value}`)
